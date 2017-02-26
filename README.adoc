@@ -1,8 +1,20 @@
-= Serveur TeeWorlds Docker
+= Docker image for TeeWorlds server
 
-In order to launch the server, you need a server config file.
+== Server with default config
 
-A command example to launch the server :
+A command example to launch the server with default config file :
+
+[source, bash]
+----
+docker run -d \
+-p 8303:8303 \
+fgracia/teeworlds:0.6.4
+----
+
+
+== Server with custom config
+
+You can mount your custom config file :
 
 [source, bash]
 ----
@@ -11,3 +23,5 @@ docker run -d \
 -p 8303:8303 \
 fgracia/teeworlds:0.6.4
 ----
+
+More information on the custom config file here : https://www.teeworlds.com/?page=docs&wiki=server_settings
