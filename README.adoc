@@ -7,7 +7,7 @@ A command example to launch the server with default config file :
 [source, bash]
 ----
 docker run -d \
--p 8303:8303 \
+-p 8303:8303/udp \
 fgracia/teeworlds:0.6.4
 ----
 
@@ -20,7 +20,7 @@ You can mount your custom config file :
 ----
 docker run -d \
 -v <your-config-file>:/opt/serverconfig.cfg \
--p 8303:8303 \
+-p 8303:8303/udp \
 fgracia/teeworlds:0.6.4
 ----
 
