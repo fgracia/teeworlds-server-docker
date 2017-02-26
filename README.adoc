@@ -1,0 +1,13 @@
+= Serveur TeeWorlds Docker
+
+In order to launch the server, you need a server config file.
+
+A command example to launch the server :
+
+[source, bash]
+----
+docker run -d \
+-v <your-config-file>:/opt/serverconfig.cfg \
+-p 8303:8303 \
+fgracia/teeworlds:0.6.4
+----
