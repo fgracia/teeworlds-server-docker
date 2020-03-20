@@ -8,7 +8,7 @@ A command example to launch the server with default config file :
 ----
 docker run -d \
 -p 8303:8303/udp \
-fgracia/teeworlds:0.6.4
+fgracia/teeworlds:0.7.4
 ----
 
 
@@ -21,7 +21,7 @@ You can mount your custom config file :
 docker run -d \
 -v <your-config-file>:/opt/serverconfig.cfg \
 -p 8303:8303/udp \
-fgracia/teeworlds:0.6.4
+fgracia/teeworlds:0.7.4
 ----
 
 More information on the custom config file here : https://www.teeworlds.com/?page=docs&wiki=server_settings
